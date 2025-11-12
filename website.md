@@ -14,10 +14,10 @@ To host and deploy a static website (HTML)on an AWS Amazon linux EC2 Instance us
 **step 1: Launch an EC2 Instance**
 
 1. Go to AWS Management Console → EC2 → Launch Instance.
-   ![alt text](<lunch instance.png>)
+   ![alt text](<WhatsApp Image 2025-11-12 at 18.41.29_feba0bc8.jpg>)
 
 2. Choose Amazon Linux 2 (free tier).
-3. ![alt text](linux.png)
+3. ![alt text](<WhatsApp Image 2025-11-12 at 18.41.30_1924cf78.jpg>)
 
 4. Select t3.micro (Free tier eligible).
 
@@ -33,7 +33,7 @@ Open terminal and connect:
 
 ssh -i "private key.pem" ec2-user@ec2-public-IP
 
-![alt text](connect.png)
+![alt text](<WhatsApp Image 2025-11-12 at 18.41.31_29d924de.jpg>)
 
 **Step 3: update system and Install Apache webserver**
  
@@ -41,7 +41,7 @@ ssh -i "private key.pem" ec2-user@ec2-public-IP
 
        sudo yum install httpd -y
    
- ![alt text](image.png)
+ ![alt text](<WhatsApp Image 2025-11-12 at 18.41.32_b1d8e9f0.jpg>)
 **Step 4: Start,enable and status the apache server**
 
         sudo systemctl start httpd 
@@ -50,7 +50,7 @@ ssh -i "private key.pem" ec2-user@ec2-public-IP
 
        sudo system status httpd
 
-   ![alt text](image-1.png)
+   ![alt text](<WhatsApp Image 2025-11-12 at 18.41.32_2f8a5b83.jpg>)
 
 **Step 5: Setup website Directory**
 
@@ -61,19 +61,19 @@ ssh -i "private key.pem" ec2-user@ec2-public-IP
 
         sudo vim index.html
 
-   ![alt text](image-2.png)
+  
 
 3Add the following content:
 
       <h1>This is my first webserver</h1>
 
-![alt text](image-3.png) 
+![alt text](<WhatsApp Image 2025-11-12 at 18.41.32_5db3d7f5.jpg>) 
 
 **Step 5: check result**
 
 1 open your Browser and enter your public IP address 
 
-![alt text](image-4.png)
+![alt text](<WhatsApp Image 2025-11-12 at 18.41.23_cb47cc7b.jpg>)
 
 
 
